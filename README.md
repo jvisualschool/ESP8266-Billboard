@@ -37,5 +37,14 @@ PlatformIO를 사용하여 코드를 빌드하고 ESP8266에 업로드합니다.
 ## 💻 웹 시뮬레이터 (Simulator)
 `index.html` 파일을 브라우저로 열면 실제 하드웨어가 없어도 동일한 기능을 미리 체험해 볼 수 있습니다.
 
+## 🛠️ 문제 해결 (Troubleshooting)
+
+### 웹 접속이 되지 않나요? (Chrome `ERR_ADDRESS_UNREACHABLE`)
+기기 하드웨어나 코드의 문제가 아닐 가능성이 높습니다. 다음을 확인해 주세요:
+
+1. **서버 응답 확인**: 터미널에서 `curl -I http://[기기_IP]` 명령어를 입력해 봅니다. 응답이 온다면 기기는 정상입니다.
+2. **Chrome 보안 DNS**: Chrome 브라우저 설정(`chrome://settings/security`)에서 **"보안 DNS 사용"**을 끄면 해결됩니다.
+3. 자세한 점검 방법은 `STATUS.md` 파일을 참고하세요.
+
 ---
 _Created with ❤️ by Antigravity_
