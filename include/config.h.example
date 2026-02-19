@@ -1,0 +1,13 @@
+#ifndef CONFIG_H
+#define CONFIG_H
+
+// WiFi Credentials
+#define WIFI_SSID "YOUR_WIFI_SSID"
+#define WIFI_PASSWORD "YOUR_WIFI_PASSWORD"
+
+// Timezone Settings (Seoul: GMT+9)
+#define GMT_OFFSET_SEC 32400
+#define DAYLIGHT_OFFSET_SEC 0
+#define NTP_SERVER "pool.ntp.org"
+
+#endif
